@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apdash</title>
+
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="font-sans">
+
+    <!-- start Header -->
+
+    <header id=" header">
+        <nav
+            class="py-1 shadow-lg fixed top-0 left-0 right-0 z-10 bg-gradient-to-r  from-[#4f1bc5] to-[#7b17c5] border-gray-200 dark:gradient-to-r dark:from-[#3e2085] dark:to-[#250f36] ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#home" class="flex items-center  space-x-3 rtl:space-x-reverse">
+                    <img src="./src/images/logo-white.png" class="w-full" alt="apdash Logo" />
+                </a>
+
+
+
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
+                        <li class="list active">
+                            <a href="#home"
+                                class=" block py-2 px-3 text-slate-300  rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-200"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="list">
+                            <a href="#about"
+                                class="block py-2 px-3 text-slate-300 md:hover:text-slate-50 transition duration-150 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li class="list">
+                            <a href="#features"
+                                class="block py-2 px-3 text-slate-300 md:hover:text-slate-50 transition duration-150 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Features</a>
+                        </li>
+                        <li class="list">
+                            <a href="#procces"
+                                class="block py-2 px-3 text-slate-300 md:hover:text-slate-50 transition duration-150 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Procces</a>
+                        </li>
+                        <li class="list">
+                            <a href="#contact"
+                                class="block py-2 px-3 text-slate-300 md:hover:text-slate-50 transition duration-150 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label class="switch">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g fill="#ffd43b">
+                                <circle r="5" cy="12" cx="12"></circle>
+                                <path
+                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                </path>
+                            </g>
+                        </svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                            </path>
+                        </svg></span>
+                    <input id="checkbox" type="checkbox" class="input">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- end Header -->
+    <main class="bg-inherit dark:bg-[#272121] bg-opacity-40 transition duration-1000">
+
+        <button id="btnUp"
+            class=" w-14 h-14 bottom-10 right-8 rounded-xl fixed z-40 bg-main opacity-0 transition duration-[.3s] text-white"><i
+                class="fa-solid fa-up-long"></i></button>
+
+        <!-- start section Home  -->
+        <section id="home"
+            class=" relative bg-gradient-to-r py-20 from-[#4f1bc5] to-[#7b17c5] dark:gradient-to-r dark:from-[#3e2085] dark:to-[#250f36] ">
+            <div class="container mx-auto ">
+                <div class="row-custom items-center ">
+                    <div class="w-full md:w-1/2 px-4">
+                        <div class="prose mx-auto">
+                            <h1 class="text-4xl md:text-5xl font-[600] capitalize text-white dark:text-gray-100">Best
+                                Way to
+                                Connect with Customers</h1>
+                            <p class="text-lg text-white font-[300] text-[1.25rem] dark:text-gray-200">Holisticly
+                                procrastinate mission-critical convergence with reliable customer service. Assertively
+                                underwhelm idea-sharing for impactful solutions.</p>
+                            <div class="row-custom">
+                                <div class="w-1/3 flex items-center gap-3">
+                                    <div class="text-white ">
+                                        <h6 class="font-[600] text-[1.5rem]">42,846</h6>
+                                        <p class="mt-0 text-sm">Total Install</p>
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+
+                                </div>
+                                <div class="w-1/3 flex items-center gap-3">
+                                    <div class="text-white ">
+                                        <h6 class="font-[600] text-[1.5rem]">9,172</h6>
+                                        <p class="mt-0 text-sm">Total Download</p>
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+
+                                </div>
+
+                                <div class="w-1/3  flex items-center gap-3">
+                                    <div class="text-white ">
+                                        <h6 class="font-[600] text-[1.5rem]">1,988</h6>
+                                        <p class="mt-0 text-sm">Active Users</p>
+                                    </div>
+
+                                    <i class="fa-solid fa-arrow-up text-white text-lg"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4">
+                        <div class="px-2 flex justify-center">
+                            <img src="./src/images/app-mobile-image.png" alt="Mopile_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section Home  -->
+
+        <section class="py-14 md:py-24">
+            <div class="container mx-auto">
+                <div class="row-custom gap-y-3">
+                    <div class=" md:w-1/2 lg:w-3/12 w-full px-4 hover:-translate-y-7 transition duration-300">
+                        <div class="shadow-xl prose dark:bg-slate-200 p-6 rounded-2xl">
+                            <div class="text-5xl pb-2"><i
+                                    class="fa-solid fa-bell-concierge text-secodColor dark:text-mainDark"></i></div>
+                            <h6 class="text-xl font-bold dark:text-black mt-2">Modular</h6>
+                            <p class="text-sm text-gray-700 dark:text-black my-4">All components are built to be used
+                                in combination. </p>
+                        </div>
+                    </div>
+                    <div class="  md:w-1/2 lg:w-3/12 w-full px-4 hover:-translate-y-7 transition duration-300">
+                        <div class="shadow-xl prose   dark:bg-slate-200 p-6 rounded-2xl">
+                            <div class="text-5xl pb-2"><i
+                                    class="fa-solid fa-window-restore text-secodColor  dark:text-mainDark"></i></div>
+                            <h6 class="text-xl font-bold mt-2  dark:text-black">Responsive</h6>
+                            <p class="text-sm text-gray-700 dark:text-black my-4">Quick is optimized to work for most
+                                devices.</p>
+                        </div>
+                    </div>
+                    <div class=" md:w-1/2 lg:w-3/12 w-full px-4 hover:-translate-y-7 transition duration-300">
+                        <div class="shadow-xl prose  dark:bg-slate-200 p-6 rounded-2xl">
+                            <div class="text-5xl pb-2"><i
+                                    class="fa-solid fa-rotate  text-secodColor  dark:text-mainDark"></i></div>
+                            <h6 class="text-xl font-bold mt-2  dark:text-black">Scalable</h6>
+                            <p class="text-sm text-gray-700 dark:text-black my-4">Remain consistent while developing
+                                new features.</p>
+                        </div>
+                    </div>
+                    <div class=" md:w-1/2 lg:w-3/12 w-full px-4 hover:-translate-y-7 transition duration-300">
+                        <div class="shadow-xl prose  dark:bg-slate-200 p-6 rounded-2xl">
+                            <div class="text-5xl pb-2"><i
+                                    class="fa-solid fa-bezier-curve text-secodColor  dark:text-mainDark"></i>
+                                <h6 class="text-xl font-bold mt-2  dark:text-black">Customizable</h6>
+                                <p class="text-sm text-gray-700 dark:text-black my-4">Change a few variables and the
+                                    whole theme adapts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- start section about  -->
+        <section id="about" class="py-14 md:py-24 bg-[url('../src/images/about-bg-shape.svg')] bg-cover bg-left-bottom">
+            <div class="container mx-auto">
+                <div class="row-custom items-center">
+                    <div class="w-full md:w-8/12 px-4">
+                        <div class=" prose ">
+                            <h2 class="text-4xl font-bold dark:text-slate-300">Apdash Help to Manage Everything for You</h2>
+                            <p class="text-lg text-gray-500 dark:text-gray-600 my-4 leading-7 ">Monotonectally impact
+                                sustainable
+                                e-services with front-end infomediaries. Collaboratively network functional solutions
+                                whereas initiatives. Progressively pontificate collaborative "outside the box" thinking
+                                for.</p>
+
+                            <ul class="list-none">
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    People are not chained to desktops or laptops to help and record.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    The only way your business can evolve to the information.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    Your app will be used by a host of different people different reasons.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    Intrinsicly innovate top-line expertise after collaborative benefits.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    Efficiently redefine value-added internal or "organic" sources without.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2 after:bg-main">
+                                    Objectively optimize backend quality vectors and for different.
+                                </li>
+                            </ul>
+                            <div class="row-custom w-2/3 mx-auto mt-6">
+                                <div
+                                    class=" text-center w-1/3 relative after:content-[''] after:h-12 after:-translate-y-1/2 after:w-[1px] after:bg-slate-300 after:absolute after:right-0 after:top-1/2 ">
+                                    <h3 class="text-main text-2xl md:text-3xl font-serif font-bold m-0">1023</h3>
+                                    <p class="pt-2 mt-0 text-sm md:text-md  text-gray-500">Customers</p>
+                                </div>
+                                <div
+                                    class=" text-center w-1/3 relative after:content-[''] after:h-12 after:-translate-y-1/2 after:w-[1px] after:bg-slate-300 after:absolute after:right-0 after:top-1/2 ">
+                                    <h3 class="text-main text-2xl md:text-3xl font-serif font-bold m-0">5470</h3>
+                                    <p class="pt-2 mt-0 text-sm md:text-md   text-gray-500">Downloads</p>
+                                </div>
+                                <div class=" text-center w-1/3 ">
+                                    <h3 class="text-main text-2xl md:text-3xl font-serif font-bold m-0">3560</h3>
+                                    <p class="pt-2 mt-0 text-sm md:text-md  text-gray-500">Satisfied</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/12 px-4">
+                        <div class="text-center">
+                            <img src="./src/images/app-mobile-image-2.png" class="inline-block " alt="app-mopile-img-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section about  -->
+
+        <section class="py-14 md:py-24">
+            <div class="container mx-auto">
+                <div class="row-custom items-center">
+                    <div class="w-full md:w-6/12 px-4">
+                        <div class="text-center">
+                            <img src="./src/images/about-us.png " alt="about-us-image">
+                        </div>
+                    </div>
+                    <div class="w-full md:w-6/12 px-5">
+                        <div class=" prose ">
+                            <h2 class="text-4xl font-semibold dark:text-white">Share Your Photos With Friends Easily
+                            </h2>
+                            <p class=" text-gray-500 dark:text-white my-4 leading-7 ">Objectively deliver
+                                professional value with diverse web-readiness. Collaboratively transition wireless
+                                customer service without goal-oriented catalysts for change. Collaboratively.</p>
+
+                            <p class=" text-gray-500 dark:text-white my-4 leading-7 ">Uniquely simplify
+                                sustainable applications whereas adaptive schemas. Competently brand performance based
+                                content and.</p>
+
+                            <ul class="list-none">
+                                <li
+                                    class="relative  text-gray-500 dark:text-white after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2  after:bg-[#6730e3]  dark:after:bg-mainDark">
+                                    The only way your business can evolve is in information.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 dark:text-white after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2  after:bg-[#6730e3]  dark:after:bg-mainDark">
+                                    Your app will be used by a host and for different.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 dark:text-white after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2  after:bg-[#6730e3]  dark:after:bg-mainDark">
+                                    Intrinsicly innovate top-line expertise benefits.
+                                </li>
+                                <li
+                                    class="relative  text-gray-500 dark:text-white after:absolute after:top-1/2 after:start-[-15px] after:rounded-full after:-translate-y-1/2 after:content-[''] after:w-2 after:h-2  after:bg-[#6730e3]  dark:after:bg-mainDark">
+                                    Efficiently redefine value-added internal sources without.
+                                </li>
+                            </ul>
+                            <div class="row-custom  gap-y-5 mx-auto mt-6">
+                                <button class="btn me-5 md:me-0 xl:me-5 ">Get Start Now</button>
+                                <button class="btn-outline">More About Us</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- start Banner section -->
+        <section class="bg-[url('../src/images/cta-bg.jpg')] relative bg-fixed ">
+            <div class="h-full py-16 md:py-28 w-full bg-main md:bg-[#8c27d4a3]">
+                <div class="container mx-auto  flex justify-center items-center">
+                    <div class="text-center w-full px-4 md:w-[60%] text-white">
+                        <h4 class="font-bold text-3xl md:text-4xl mb-4 md:mb-8 text-white">Download Our Apps</h4>
+                        <p class="text-sm md:text-lg dark:text-white">Start working with that can provide everything you
+                            need to
+                            generate awareness, drive traffic,
+                            connect. Efficiently transform granular value with client-focused content. Energistically
+                            redefine market.</p>
+                        <div class="row-custom  gap-y-3 mt-10">
+                            <div class=" w-6/12 lg:w-1/3 px-3">
+                                <button
+                                    class=" px-10 py-2 rounded-full flex items-center  bg-secodColor border border-secodColor text-white  text-[10px]  md:text-[16px] hover:bg-[#6d14ae] hover:border-[#6d14ae] transition duration-[.5s]">
+                                    <i class=" pe-4 fa-brands fa-windows text-2xl md:text-3xl"></i>
+                                    <p class="dark:text-white">Download From <br> <strong
+                                            class="text-[14px] md:text-inherit">Windows</strong> </p>
+                                </button>
+                            </div>
+                            <div class=" w-6/12 lg:w-1/3 px-3">
+                                <button
+                                    class=" px-10 py-2  rounded-full flex items-center  bg-secodColor border border-secodColor text-white   text-[10px]  md:text-[16px] hover:bg-[#6d14ae] hover:border-[#6d14ae] transition duration-[.5s]">
+                                    <i class=" pe-4 fa-brands fa-apple text-2xl md:text-3xl"></i>
+                                    <p class="dark:text-white">Download From <br> <strong
+                                            class="text-[14px] md:text-inherit">App
+                                            Store</strong> </p>
+                                </button>
+                            </div>
+                            <div class=" w-6/12 lg:w-1/3 px-3">
+                                <button
+                                    class=" px-10 py-2  rounded-full flex items-center  bg-secodColor border border-secodColor text-white   text-[10px]  md:text-[16px] hover:bg-[#6d14ae] hover:border-[#6d14ae] transition duration-[.5s]">
+                                    <i class="pe-4 fa-brands fa-google-play text-2xl md:text-3xl"></i>
+                                    <p class="dark:text-white">Download From <br> <strong
+                                            class="text-[14px] md:text-inherit">Google Play </strong> </p>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end Banner section -->
+
+        <!-- start section features -->
+        <section id="features" class="py-14 md:py-24">
+            <div class="container mx-auto">
+
+                <div class="w-full md:w-[65%] px-4 mx-auto text-center">
+                    <h2 class="text-4xl font-semibold text-center mb-10">Apdash Features</h2>
+                    <p class="text-textColor dark:text-white">Objectively deliver professional value with diverse
+                        web-readiness.
+                        Collaboratively transition wireless customer service without goal-oriented catalysts for change.
+                        Collaboratively.</p>
+                </div>
+
+                <div class="row-custom items-center mt-5 md:mt-20">
+                    <div class="w-full md:w-1/3 order-1 md:order-1 px-4">
+                        <ul class="text-textColor dark:text-white">
+                            <li class="flex md:justify-start justify-center ">
+                                <i class="fa-regular fa-face-smile text-[35px] text-main dark:text-mainDark"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Responsive web design</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Modular and monetize an
+                                        componente between layouts
+                                        monetize array. Core competencies for testing.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex md:justify-start justify-center mt-7">
+                                <i
+                                    class="fa-solid fa-bezier-curve text-[35px] text-main dark:text-mainDark -rotate-4"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Loaded with feature</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Holisticly aggregate client
+                                        centered the manufactured
+                                        products transparent. Organic sources content.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex md:justify-start justify-center mt-7">
+                                <i class="fa-solid fa-headphones text-[35px] text-main dark:text-mainDark"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Friendly online support</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Monotonectally recaptiualize
+                                        client the centric
+                                        customize clicks niche markets for this meta-services via.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="w-full md:w-1/3 px-4 order-3 md:order-2 text-center my-7 md:my-0">
+                        <img src="./src/images/app-mobile-image.png" class="inline-block" alt="mopile-image">
+                    </div>
+
+                    <div class="w-full md:w-1/3 order-2 md:order-4 px-4 mt-7 md:mt-0">
+                        <ul class="text-textColor dark:text-white">
+                            <li class="flex md:justify-start justify-center ">
+                                <i class="fa-solid fa-layer-group text-[35px] text-main dark:text-mainDark"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Free updates forever</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Compellingly formulate
+                                        installed base imperatives high
+                                        standards in benefits for highly efficient client.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex md:justify-start justify-center mt-7">
+                                <i class="fa-solid fa-photo-film text-[35px] text-main dark:text-mainDark"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Built with Sass</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Energistically initiate
+                                        client-centric the maximize
+                                        market positioning synergy rather client-based data.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex md:justify-start justify-center mt-7">
+                                <i class="fa-solid fa-palette text-[35px] text-main dark:text-mainDark"></i>
+                                <div class="ps-5">
+                                    <h6 class="font-semibold text-xl">Infinite colors</h6>
+                                    <p class="mt-3 text-sm md:text-inherit">Energistically initiate
+                                        client-centric e-tailers
+                                        rather than-based data. Morph business technology before.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start section features -->
+
+        <!-- start section procces -->
+        <section id="procces" class="py-14 md:py-24">
+            <div class="container mx-auto">
+
+                <div class="w-full px-4 md:w-[65%] mx-auto text-center">
+                    <h2 class="text-4xl font-semibold text-center mb-10">Our Work Process</h2>
+                    <p class="text-textColor dark:text-white">Professional hosting at an affordable price. Distinctively
+                        recaptiualize
+                        principle-centered core competencies through client-centered core competencies.</p>
+                </div>
+
+                <div class="row-custom items-center justify-center mt-10 md:mt-20">
+                    <div class=" w-full xl:w-1/2 px-4">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center h-[8.75rem] w-[8.75rem]  rounded-full shadow-zinc-400 shadow-md">
+                                <i class="fa-solid fa-diagram-project text-main dark:text-mainDark text-4xl"></i>
+                            </div>
+
+                            <div class="pros ps-7 w-8/12">
+                                <h5 class="font-semibold text-lg md:text-xl opacity-70">Planning Idea</h5>
+                                <p class="text-textColor mt-4 text-sm md:text-inherit  dark:text-white">Holisticly
+                                    architect sustainable
+                                    meta-services for process-centric core competencies. Enthusiastically re-engineer
+                                    best-of-breed outsourcing.</p>
+                            </div>
+                        </div>
+
+                        <div class="container mx-auto">
+                            <svg x="0px" y="0px" width="312px" height="130px">
+                                <path class="dashed1" fill="none" stroke="rgb(95, 93, 93)" stroke-width="1"
+                                    stroke-dasharray="1300" stroke-dashoffset="0"
+                                    d="M3.121,2.028 C3.121,2.028 1.003,124.928 99.352,81.226 C99.352,81.226 272.319,21.200 310.000,127.338">
+                                </path>
+                                <path class="dashed2" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6"
+                                    stroke-dashoffset="1300"
+                                    d="M3.121,2.028 C3.121,2.028 1.003,124.928 99.352,81.226 C99.352,81.226 272.319,21.200 310.000,127.338 ">
+                                </path>
+                            </svg>
+
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="pros pe-7 w-8/12 text-end">
+                                <h5 class="font-semibold text-lg md:text-xl opacity-70">Developed Final Product</h5>
+                                <p class="text-textColor mt-4 text-sm md:text-inherit  dark:text-white">Monotonectally
+                                    harness holistic
+                                    web-readiness after multimedia based catalysts for change. Completely brand
+                                    front-end systems before visionary.</p>
+                            </div>
+
+                            <div
+                                class="flex items-center justify-center h-[8.75rem] w-[8.75rem]  rounded-full shadow-zinc-400 shadow-md">
+                                <i class="fa-solid fa-puzzle-piece text-main dark:text-mainDark text-4xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="container mx-auto">
+                            <svg x="0px" y="0px" width="312px" height="130px">
+                                <path class="dashed1" fill="none" stroke="rgb(95, 93, 93)" stroke-width="1"
+                                    stroke-dasharray="1300" stroke-dashoffset="0"
+                                    d="M311.000,0.997 C311.000,0.997 313.123,123.592 214.535,79.996 C214.535,79.996 41.149,20.122 3.377,125.996">
+                                </path>
+                                <path class="dashed2" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6"
+                                    stroke-dashoffset="1300"
+                                    d="M311.000,0.997 C311.000,0.997 313.123,123.592 214.535,79.996 C214.535,79.996 41.149,20.122 3.377,125.996">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center h-[8.75rem] w-[8.75rem]  rounded-full shadow-zinc-400 shadow-md">
+                                <i class="fa-solid fa-truck text-main dark:text-mainDark text-4xl"></i>
+                            </div>
+
+                            <div class="pros ps-7 w-8/12">
+                                <h5 class="font-semibold text-lg md:text-xl opacity-70">Deliver to Customer </h5>
+                                <p class="text-textColor mt-4 text-sm md:text-inherit dark:text-white">Monotonectally
+                                    plagiarize
+                                    synergistic e-business for
+                                    stand-alone communities. Professionally enhance visionary manufactured products
+                                    progressive.p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" w-full xl:w-1/2 px-4 mt-5 md:mt-0 ">
+                        <div class="flex justify-center md:ps-24">
+                            <img src="./src/images/app-mobile-image-3.png" alt="app-mopile">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end section procces -->
+
+        <!-- start banner 2 -->
+        <section class="py-16 bg-gradient-to-r from-[#4f1bc5] to-[#7b17c5]">
+            <div class="container mx-auto">
+                <div class="row-custom gap-y-6 text-white justify-center">
+                    <div class=" w-full md:w-3/12 mx-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-users text-6xl"></i>
+                            <h4 class="font-bold text-3xl my-2">17869</h4>
+                            <p>Customers</p>
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-3/12 mx-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-cloud-arrow-down text-6xl"></i>
+                            <h4 class="font-bold text-3xl my-2">37419</h4>
+                            <p>Downloads</p>
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-3/12 mx-4">
+                        <div class="text-center">
+                            <i class="fa-regular fa-face-smile text-6xl"></i>
+                            <h4 class="font-bold text-3xl my-2">35023</h4>
+                            <p>Satisfied</p>
+                        </div>
+                    </div>
+                    <div class=" w-full md:w-3/12 mx-4">
+                        <div class="text-center">
+                            <i class="fa-solid fa-mug-hot text-6xl"></i>
+                            <h4 class="font-bold text-3xl my-2">2323</h4>
+                            <p>Cup of Coffee</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end banner 2 -->
+
+        <!-- start section team -->
+        <section class="py-14 md:py-24 bg-sectionColor dark:bg-[#363333]">
+            <div class="container mx-auto">
+                <div class="w-full px-4 md:w-[65%] mx-auto text-center">
+                    <h2 class="text-4xl font-semibold text-center mb-10">Our Team Members</h2>
+                    <p class="text-textColor dark:text-white">Authoritatively mesh intuitive paradigms vis-a-vis
+                        goal-oriented
+                        partnerships. Continually extend open-source outside the box thinking after focused catalysts.
+                    </p>
+                </div>
+
+                <div class="row-custom gap-y-6 mt-16 ">
+                    <div class="w-full md:w-6/12 xl:w-3/12  px-4">
+                        <div
+                            class="bg-white dark:bg-[#272121] p-6  md:p-14 border border-gray-300 dark:border-[#272121] text-center">
+                            <div class=" w-[40%] md:w-[80%] mx-auto">
+                                <img src="./src/images/team-member-1.png" class="w-full" alt="team-member-1">
+                            </div>
+                            <div class="mt-7 prose">
+                                <h4 class="text-xl md:text-2xl mb-1 dark:text-white">Richard Ford</h4>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Instructor of
+                                    Mathematics</p>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Authoritatively engage
+                                    leading-edge
+                                    processes tactical capital
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-6/12 xl:w-3/12  px-4">
+                        <div
+                            class="bg-white  dark:bg-[#272121] p-6 md:p-14 border border-gray-300  dark:border-[#272121] text-center">
+                            <div class=" w-[40%] md:w-[80%] mx-auto">
+                                <img src="./src/images/team-member-2.png" class="w-full" alt="team-member-2">
+                            </div>
+                            <div class="mt-7 prose">
+                                <h4 class="text-xl md:text-2xl  mb-1 dark:text-white">Kely Roy</h4>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Lead Designer </p>
+
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Monotonectally engage
+                                    sticky
+                                    collaborative markets synergistically</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-6/12 xl:w-3/12  px-4">
+                        <div
+                            class="bg-white  dark:bg-[#272121] p-6 md:p-14 border border-gray-300  dark:border-[#272121] text-center">
+                            <div class=" w-[40%] md:w-[80%] mx-auto">
+                                <img src="./src/images/team-member-3.png" class="w-full" alt="team-member-3">
+                            </div>
+                            <div class="mt-7 prose">
+                                <h4 class="text-xl md:text-2xl  mb-1 dark:text-white">Gerald Nichols</h4>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Managing Director</p>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Assertively
+                                    procrastinate standardized
+                                    whereas technically sound </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-6/12 xl:w-3/12  px-4">
+                        <div
+                            class="bg-white  dark:bg-[#272121] p-6 md:p-14 border border-gray-300  dark:border-[#272121] text-center">
+                            <div class=" w-[40%] md:w-[80%] mx-auto">
+                                <img src="./src/images/team-member-4.png" class="w-full" alt="team-member-4">
+                            </div>
+                            <div class="mt-7 prose">
+                                <h4 class="text-xl md:text-2xl  mb-1 dark:text-white">Gerald Nichols</h4>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Team Manager</p>
+                                <p class="text-textColor text-sm md:text-inherit dark:text-white">Synergistically
+                                    actualize out the-box
+                                    technologies before
+                                    parallel process
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section team -->
+
+        <!-- start section Contact  -->
+        <section id="contact" class="py-14 md:py-24">
+            <div class="container mx-auto">
+                <div class="row-custom">
+                    <div class="w-full md:w-1/2 px-4">
+                        <div class="bg-sectionColor dark:bg-[#363333] p-12">
+                            <h4 class="font-semibold text-xl dark:text-white">Ready to get started?</h4>
+
+                            <form action="#" class="mt-5">
+                                <input type="text" class="text-sm form-input border-none w-full"
+                                    placeholder="Enter name">
+                                <input type="email" class="text-sm form-input border-none w-full my-4"
+                                    placeholder="Enter email">
+
+                                <textarea class="form-textarea w-full border-none" rows="7"
+                                    placeholder="Message"></textarea>
+
+                                <button class="btn mt-7">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 px-4">
+                        <div class="prose mt-6 md:mt-0">
+                            <h4 class="font-semibold text-3xl md:text-5xl dark:text-white">Looking for a excellent
+                                Business idea?</h4>
+                            <p class="text-sm md:text-xl text-textColor dark:text-white">Give us a call or drop by
+                                anytime, we endeavour
+                                to answer
+                                all enquiries within 24 hours
+                                on business days.</p>
+
+                            <button class="btn-outline inline-block">Get Directions <i
+                                    class="fa-solid fa-arrow-right ps-5"></i></button>
+
+                            <div class="w-full h-[1px] bg-textColor bg-opacity-30 my-12"></div>
+
+                            <ul class="ps-0">
+                                <li class="flex items-center">
+                                    <div
+                                        class="flex justify-center items-center p-[1rem] rounded-full border border-main dark:border-mainDark text-main dark:text-mainDark me-4">
+                                        <i class="fa-solid fa-location-arrow"></i>
+                                    </div>
+                                    <div class="prose">
+                                        <h4 class="text-xl dark:text-white">Company Location</h4>
+                                        <p class="text-textColor dark:text-white">100 Yellow House, Mn Factory, United
+                                            State, 13420</p>
+                                    </div>
+                                </li>
+
+                                <li class="flex items-center mt-6">
+                                    <div
+                                        class="flex justify-center items-center p-[1rem] rounded-full border border-main dark:border-mainDark text-main dark:text-mainDark me-4">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="prose">
+                                        <h4 class="text-xl dark:text-white"> Email Address</h4>
+                                        <p class="text-textColor dark:text-white">hello@yourdomain.com</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- end section Contact  -->
+
+        <!-- start section news -->
+        <section class="py-14 md:py-24 bg-sectionColor dark:bg-[#363333]">
+            <div class="container mx-auto">
+                <div class="w-full px-4 md:w-[65%] mx-auto text-center">
+                    <h2 class="text-4xl font-semibold text-center mb-10">Our Latest News</h2>
+                    <p class="text-textColor dark:text-white">Efficiently matrix robust total linkage after market
+                        positioning
+                        bandwidth. Holisticly restore B2B materials rather than brand flexible paradigms vis-a-vis
+                        mission-critical e-commerce.
+                    </p>
+                </div>
+
+                <div class="row-custom gap-y-7 mt-12">
+                    <div class="w-full md:w-1/2 xl:w-1/3 px-4">
+                        <div class="bg-white dark:bg-[#272121] shadow-sm ">
+
+                            <div class="border-b-4 border-[#ec6e7b] relative">
+                                <img src="./src/images/1.jpg" class="w-full" alt="image_1">
+
+                                <div
+                                    class="absolute right-5 bottom-[-22px] bg-[#ec6e7b] h-[55px] w-[55px] rounded-full flex justify-center items-center">
+                                    <p class="text-sm text-white ">
+                                        <Strong class="block">24</Strong>
+                                        <span>Apr</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class=" p-7  text-textColor dark:text-white">
+                                <ul class="flex">
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center me-5"><i
+                                            class="fa-solid fa-heart  text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3  dark:text-white">45 Comments</p>
+                                    </li>
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center"><i
+                                            class="fa-solid fa-share-nodes text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3 dark:text-white">10 Share</p>
+                                    </li>
+                                </ul>
+
+                                <article class="mt-4 ">
+                                    <h5
+                                        class="mb-3 text-lg md:text-xl font-semibold cursor-pointer hover:text-main transition duration-[.5s]">
+                                        Appropriately productize fully</h5>
+                                    <p class="text-sm md:text-inherit">Some quick example text to build on the card
+                                        title and make up the bulk.</p>
+                                </article>
+
+                                <div class="mt-4"> <a href="#"
+                                        class="group font-semibold hover:text-main transition duration-[.5s] ">Read more
+                                        <i
+                                            class="fa-solid fa-arrow-right  group-hover:translate-x-2 transition duration-[.5s]"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 xl:w-1/3 px-4">
+                        <div class="bg-white dark:bg-[#272121] shadow-sm ">
+
+                            <div class="border-b-4 border-[#ec6e7b] relative">
+                                <img src="./src/images/2.jpg" class="w-full" alt="image_2">
+
+                                <div
+                                    class="absolute right-5 bottom-[-22px] bg-[#ec6e7b] h-[55px] w-[55px] rounded-full flex justify-center items-center">
+                                    <p class="text-sm text-white ">
+                                        <Strong class="block">24</Strong>
+                                        <span>Apr</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class=" p-7  text-textColor dark:text-white">
+                                <ul class="flex">
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center me-5"><i
+                                            class="fa-solid fa-heart  text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3  dark:text-white">45 Comments</p>
+                                    </li>
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center"><i
+                                            class="fa-solid fa-share-nodes text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3 dark:text-white">10 Share</p>
+                                    </li>
+                                </ul>
+
+                                <article class="mt-4 ">
+                                    <h5
+                                        class="mb-3 text-lg md:text-xl font-semibold cursor-pointer hover:text-main transition duration-[.5s]">
+                                        Appropriately productize fully</h5>
+                                    <p class="text-sm md:text-inherit">Some quick example text to build on the card
+                                        title and make up the bulk.</p>
+                                </article>
+
+                                <div class="mt-4"> <a href="#"
+                                        class="group font-semibold hover:text-main transition duration-[.5s] ">Read more
+                                        <i
+                                            class="fa-solid fa-arrow-right  group-hover:translate-x-2 transition duration-[.5s]"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 xl:w-1/3 px-4">
+                        <div class="bg-white dark:bg-[#272121] shadow-sm ">
+
+                            <div class="border-b-4 border-[#ec6e7b] relative">
+                                <img src="./src/images/3.jpg" class="w-full" alt="image_36">
+
+                                <div
+                                    class="absolute right-5 bottom-[-22px] bg-[#ec6e7b] h-[55px] w-[55px] rounded-full flex justify-center items-center">
+                                    <p class="text-sm text-white ">
+                                        <Strong class="block">24</Strong>
+                                        <span>Apr</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class=" p-7  text-textColor dark:text-white">
+                                <ul class="flex">
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center me-5"><i
+                                            class="fa-solid fa-heart  text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3  dark:text-white">45 Comments</p>
+                                    </li>
+                                    <li class="flex opacity-65 text-[12px] md:text-sm items-center"><i
+                                            class="fa-solid fa-share-nodes text-main dark:text-mainDark"></i>
+                                        <p class=" ps-3 dark:text-white">10 Share</p>
+                                    </li>
+                                </ul>
+
+                                <article class="mt-4 ">
+                                    <h5
+                                        class="mb-3 text-lg md:text-xl font-semibold cursor-pointer hover:text-main transition duration-[.5s]">
+                                        Appropriately productize fully</h5>
+                                    <p class="text-sm md:text-inherit">Some quick example text to build on the card
+                                        title and make up the bulk.</p>
+                                </article>
+
+                                <div class="mt-4"> <a href="#"
+                                        class="group font-semibold hover:text-main transition duration-[.5s] ">Read more
+                                        <i
+                                            class="fa-solid fa-arrow-right  group-hover:translate-x-2 transition duration-[.5s]"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section news -->
+
+
+    </main>
+
+    <div class="btn hidden mdScreen:inline-block ">Click</div>
+    <!-- start Footer  -->
+
+    <footer class="py-24 bg-gradient-to-r from-[#4f1bc5] to-[#7b17c5]">
+        <div class="container mx-auto">
+            <div class="row-custom gap-y-7">
+                <div class="w-full  md:w-4/12 px-4">
+                    <div class="mb-4">
+                        <img src="./src/images/logo-white.png" alt="logo-white">
+                    </div>
+
+                    <article class=" mt-2">
+                        <p class=" text-white dark:text-white">Dynamically re-engineer high standards in functiona with alternative paradigms. Conveniently
+                            monetize resource maximizing initiatives.</p>
+                    </article>
+
+                    <ul class="flex mt-5">
+                        <li
+                            class="bg-[#00a7e6] h-8 w-8 rounded-[4px] flex justify-center items-center text-white me-3 hover:rounded-full transition duration-[.5s]">
+                            <i class="fa-solid fa-x"></i>
+                        </li>
+                        <li
+                            class="bg-[#ff0000] h-8 w-8 rounded-[4px] flex justify-center items-center text-white me-3 hover:rounded-full transition duration-[.5s]">
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                        <li
+                            class="bg-[#0077b5] h-8 w-8 rounded-[4px] flex justify-center items-center text-white me-3 hover:rounded-full transition duration-[.5s]">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </li>
+                        <li
+                            class="bg-[#EA4C89] h-8 w-8 rounded-[4px] flex justify-center items-center text-white me-3 hover:rounded-full transition duration-[.5s]">
+                            <i class="fa-brands fa-chrome"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full  md:w-2/12 px-4">
+                    <div class="">
+                        <h3 class="uppercase text-white text-lg">PRODUCTS</h3>
+
+                        <ul class="mt-5 text-white">
+                            <li class="mb-3 text-sm"><span>Pricing</span> </li>
+                            <li class="mb-3 text-sm"><span>Navigation</span> </li>
+                            <li class="mb-3 text-sm"><span>Al Studio</span> </li>
+                            <li class="mb-3 text-sm"><span>Page Speed</span> </li>
+                            <li class="mb-3 text-sm"><span>Performance</span> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full  md:w-2/12 px-4">
+                    <div class="">
+                        <h3 class="uppercase text-white text-lg">Company</h3>
+
+                        <ul class="mt-5 text-white">
+                            <li class="mb-3 text-sm"><span>About US</span></li>
+                            <li class="mb-3 text-sm"><span>Careers</span></li>
+                            <li class="mb-3 text-sm"><span>Custommers</span></li>
+                            <li class="mb-3 text-sm"><span>Communitys</span></li>
+                            <li class="mb-3 text-sm"><span>Our Team</span> </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="w-full  md:w-2/12 px-4">
+                    <div class="">
+                        <h3 class="uppercase text-white text-lg">Support</h3>
+
+                        <ul class="mt-5 text-white">
+                            <li class="mb-3 text-sm"><span>FAQ</span> </li>
+                            <li class="mb-3 text-sm"><span>Sells</span> </li>
+                            <li class="mb-3 text-sm"><span>Contact Support</span> </li>
+                            <li class="mb-3 text-sm"><span>Network Status </span> </li>
+                            <li class="mb-3 text-sm"><span>Product Services</span> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end Footer  -->
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
